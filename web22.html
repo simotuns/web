@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1550785355-7ed3f3375d75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#myBtn:hover {
+  background-color: #333;
+  color: #fff; 
+}
+</style>
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+<p style="color:STEELBLUE"> Horses have lived on Earth for more than 50 million years, according the American Museum of Natural History. According to Scientific American, the first horses originated in North America and then spread to Asia and Europe. The horses left in North America became extinct about 10,000 years ago and were re-introduced by colonizing Europeans. 
+It is believed that horses were first domesticated in Asia between 3000 and 4000 B.C., according to Oklahoma State University. Back then, horses were used mostly for milk and meat. Eventually, horses joined oxen as a form of animal transportation.  </p>
+<ul>
+  <li><h2 style="color:DARKSLATEGRAY;">The Evolution of the Horse</h2></li>
+  <p style="color:STEELBLUE">The history of the horse goes back some 55 million years, to a very small animal, about the size of a dog or a baby lamb, named Hyracotherium (or sometimes Eohippus) that evolved as part of the mammalian radiation that followed the extinction of the dinosaurs. This distant ancestor of the horse lived in tropical rain forests in North America and ate leaves.</p>
+<img src="https://cdn.kastatic.org/ka-perseus-images/b599e3a7ad8e737ce9aab8514f0fe07fc8f51891.jpg"  width="50%" height="50%">
+<p style="color:STEELBLUE">Some ancestors of the horse went extinct but certain lines of these early horses continued to develop in response to predators, competitors, and changing environmental conditions. They gradually grew in size. Legs grew longer and developed powerful ligaments, and feet with a large center toe evolved into a single hoof — physiological changes equipping the proto-horse for speed across open spaces and hard ground.
+Over millions of years, the rain forests of what is now North America dried up and the Rocky Mountains arose. Enormous grassy plains appeared on either side of the peaks. The horse’s ancestor adapted to better consume the tough but increasingly abundant prairie grass. The animal needed stronger jaws and bigger teeth that wouldn’t wear down from all that grinding.</p>
+ <li><h2 style="color:DARKSLATEGRAY;">Horses and Riders</h2></li>
+<p style="color:STEELBLUE;"> At some point, no one is sure exactly when, humans began to eye horses as more than simply food. One can imagine some adventurous herder youth climbing atop a docile-looking horse for amusement. But whether humans used horses to pull wheeled vehicles such as chariots before they learned to ride them is not certain. Because most of these developments occurred before writing was invented, we depend on archaeological evidence to help us understand what happened.</p>
+<p style="color:STEELBLUE;">Horses pulling chariots are depicted in drawings from the Middle East about 4,000 years ago. The earliest evidence of humans riding horses is 5,000 year old fossils of worn-down horse teeth that indicate a riding bit was placed in the animal’s mouth. It is certainly possible that humans rode horses without bits long before that, but no physical evidence remains.</p>
+  <img src="https://images.unsplash.com/photo-1517855695349-6129cbc80a0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"  width="50%" height="50%">
+<p style="color:STEELBLUE;">With the ability to ride the horse, and to domesticate it for food, horse-centered human cultures emerged in places like the steppes of Central Asia. Horses and riders or horse-drawn carts or chariots could cover huge distances at great speed. As trade routes developed, roads were built to move horses and chariots more quickly. Horse-mounted messengers on the Persian Empire’s Royal Road in the fifth century BCE could carry a message 1,700 miles in seven days, compared with 90 days by foot.</p>
+ 
+ </ul>
+ <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+
+</html>

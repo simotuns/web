@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1512934772407-b292436089ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=948&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#myBtn:hover {
+  background-color: #333;
+  color: #fff; 
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+<h1 style="color:DARKSLATEGRAY;">Horses at the Olympics</h1>
+<ul>
+  <li><h2 style="color:DARKSLATEGRAY;">HISTORY</h2></li>
+  <p style="color:STEELBLUE">Eventing is the most complete combined competition discipline and demands of the competitor and horse considerable experience in all branches of equitation. It covers every aspect of horsemanship: the harmony between horse and rider that characterise Dressage; the contact with nature, stamina and extensive experience essential for the Cross Country; the precision, agility and technique involved in Jumping.</p>
+  <img src="https://images.unsplash.com/photo-1511450430526-c6452fd0d2f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80"  width="50%" height="50%">
+  <li><h2 style="color:DARKSLATEGRAY;">MILITARY BACKGROUND<h2></li>
+  <p style="color:STEELBLUE">Developed to test and prepare cavalry horses, Eventing has a long and colourful history. Initially, the purpose was to create a competition in which officers and horses could be tested for any challenges that could occur on or off duty. It also provided a basis to compare training standards between the calvalries of different countries.</p>
+  <img src="https://images.unsplash.com/photo-1574125573696-e9f2018f90d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80"  width="50%" height="50%">
+  <li><h2 style="color:DARKSLATEGRAY;">FIRST WOMAN</h2></li>
+  <p style="color:STEELBLUE">Although women had been allowed to ride in equestrian events since 1952, it wasn't until Helena du Pont competed for the United States at the 1964 Tokyo Games that Eventing saw its first woman representing her country.</p>
+  <img src="https://images.unsplash.com/photo-1563606618307-9549e58243ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"  width="50%" height="50%">
+	<li><h2 style="color:DARKSLATEGRAY;">OLYMPIC HISTORY</h2></li>
+	<p style="color:STEELBLUE">Equestrian sports featured on the Olympic programme of the Paris Games in 1900, with jumping events, and were then withdrawn until the 1912 Games in Stockholm. Since then, this sport has been on the Olympic programme with remarkable regularity.</p>
+	<p style="color:STEELBLUE">Until 1948, only men competed in the events, as the riders had to be officers. This restriction was lifted in 1951, and, since the Helsinki Games in 1952, women have competed with men in the mixed events. They competed first in dressage, then gradually in the other equestrian events.</p>
+	<p style="color:STEELBLUE">From the three disciplines that make up equestrian, eventing is the most demanding. Indeed, it combines not only jumping and dressage, but also a long cross-country course, on mixed terrain with sometimes imposing natural or artificial obstacles.</p>
+	<p style="color:STEELBLUE">At the 2008 Games in Beijing, Canada’s Ian Millar did particularly well winning the silver medal in the team jumping, 36 years after his first participation in the Olympic Games in Munich in 1972. At 61, he was the oldest medallist at the Beijing Games.</p>
+    <img src="https://images.unsplash.com/photo-1559597425-b455feb732be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1188&q=80"  width="50%" height="50%">
+		 </ul>
+ <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+
+</html>

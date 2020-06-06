@@ -1,0 +1,1 @@
+document.write("The history of mankind is carried on the back of a horse.");
